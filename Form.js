@@ -3,9 +3,9 @@ import React from 'react';
 class Form extends React.Component{
   render(){
     return(
-      <form action="">
+      <form handleSubmit="">
     	  <input type="text" placeholder="GitHub username"/>
-        <button>Add card</button>
+        <button >Add card</button>
     	</form>
     )
   }

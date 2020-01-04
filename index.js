@@ -13,13 +13,13 @@ const testData = [
 const CardList = (props) => (
   
  <div> 
- {testData.map(profile => <Card {...profile} />)}
+   {props.profiles.map( profile => <Card {...profile}/>)}
   </div>
 );
 
 class App extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       profiles:testData
     }
